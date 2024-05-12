@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## How to run it
 
-## Getting Started
+First, install the package.json:
 
-First, run the development server:
+```bash
+npm run install
+```
+
+And then run the next.js app:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Features
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. User List Page: This page list all the users fetched from [reqres.in](https://reqres.in) API. Every user display:
 
-## Learn More
+- Profile picture.
+- First and Last Name.
+- Email.
 
-To learn more about Next.js, take a look at the following resources:
+Include pagination on the User List Page, and a Skeleton component to create a skeleton loading effect for list of users. The skeleton component is used to show the structure of the elements to the final user when is waiting for the api fetch.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. User Details Page: Clicking a user entry in the User List Page, you can navigate to a User Details Page to display:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Profile Pcture.
+- First and Last Name.
+- Email.
 
-## Deploy on Vercel
+Include a Skeleton component to create a skeleton loading effect for the userDetails. The skeleton component is used to show the estructure of the element to the final user when is waiting for the api to fetch.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. User Creation Form: Form to create a new user. I'm ussing the `https://reqres.in/api/register` as reqres.in mention in the [swagger documentation](https://reqres.in/api-docs/#/default/post_register) to create a new user. Include the following form fields:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- First Name
+- Last Name
+- Nickname (required)
+- Email (required)
+- Password (required and encrypted using bcryptjs)
+
+## Technologies
+
+- React
+- Typescript
+- Next.js
+- React Hook Forms
+- MUI
+- Tailwind
+- Prettier
+- Eslint
+- bcryptjs

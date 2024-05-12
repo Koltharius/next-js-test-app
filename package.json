@@ -2,6 +2,10 @@
   "name": "legit.healt-technical-interview",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "name": "David Sánchez Jiménez",
+    "email": "dasaji92@gmail.com"
+  },
   "scripts": {
     "build": "next build",
     "dev": "next dev",
@@ -11,9 +15,19 @@
     "start": "next start"
   },
   "dependencies": {
+    "@emotion/cache": "^11.11.0",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@mui/icons-material": "^5.15.17",
+    "@mui/material": "^5.15.17",
+    "@mui/material-nextjs": "^5.15.11",
+    "@types/bcryptjs": "^2.4.6",
+    "bcryptjs": "^2.4.3",
+    "clsx": "^2.1.1",
     "next": "14.2.3",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-hook-form": "^7.51.4"
   },
   "devDependencies": {
     "@types/node": "^20",
