@@ -10,6 +10,8 @@ import bcrypt from 'bcryptjs';
 
 // Default values for the form
 const defaultValues = {
+  firstName: '',
+  lastName: '',
   username: '',
   email: '',
   password: '',

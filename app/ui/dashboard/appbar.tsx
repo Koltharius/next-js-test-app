@@ -8,7 +8,7 @@ export default function PageAppBar() {
   return (
     <Box className="flex flex-grow">
       <CssBaseline />
-      <AppBar position="sticky">
+      <AppBar position="relative">
         <Toolbar>
           <Typography variant="h6" component="div" className="flex-grow-1">
             Users Dashboard

@@ -47,7 +47,7 @@ export default function UserCardList() {
           spacing={2}
           direction="row"
           justifyContent="center"
-          className="pt-4"
+          className="p-4 h-32 w-full flex justify-center items-center"
         >
           <Pagination
             count={apiResponse?.total_pages}

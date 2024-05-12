@@ -13,6 +13,7 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This app was also deployed on Vercel [https://legit-health-technical-interview.vercel.app/](https://legit-health-technical-interview.vercel.app/)
 
 ## Features
 
